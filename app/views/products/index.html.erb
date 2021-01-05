@@ -1,11 +1,31 @@
 <!-- app/views/products/index.html.erb -->
-<h1>Awesome Products</h1>
-<% @products.each do |product| %>
-  <div class="card-product">
-    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-    <div class="card-product-infos">
-      <h2>Skello</h2>
-      <p>Manage your staff calendar</p>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-6">
+      <!-- This div is centered and takes 6 columns -->
+      <h1>Awesome Products</h1>
+      <% @products.each do |product| %>
+        <div class="card-product">
+          <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+          <div class="card-product-infos">
+            <h2>Skello</h2>
+            <p>Manage your staff calendar</p>
+          </div>
+        </div>
+      <% end %>
     </div>
   </div>
-<% end %>
+</div>
+
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    This footer is made with <i class="fas fa-heart"></i> at Le Wagon
+  </div>
+</div>
